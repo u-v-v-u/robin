@@ -17,3 +17,11 @@ fn success() -> impl Reply {
 fn custom(message: String, status: StatusCode) -> impl Reply {
     response_base().status(status).body(message).unwrap()
 }
+
+/*
+ * TODO:
+ * Add endpoints for: Creating, Reading, Updating, Deleting items in Collections.
+ *
+ * EXAMPLE:
+ * [TYPE] @ [ENDPOINT]/[COLLECTION]/[KEY]
+ */

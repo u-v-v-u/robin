@@ -1,11 +1,12 @@
 mod mongo;
 mod routing;
+mod schema;
 
 use std::net::SocketAddr;
 
 use anyhow::Result;
 use dotenvy::dotenv;
-use tracing::{info, warn};
+use tracing::warn;
 use tracing_subscriber::prelude::*;
 use warp::Filter;
 

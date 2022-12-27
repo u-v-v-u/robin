@@ -13,7 +13,7 @@ impl DbClient {
     Ok(Self(client))
   }
 
-  pub async fn list(&self) -> Result<()>{
+  pub async fn list_collection(&self) -> Result<()>{
     let shit = self.0.database("robin").list_collection_names(None).await?;
 
     println!("{shit:?}");
