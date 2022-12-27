@@ -9,4 +9,7 @@ edition = "2021"
 mongodb = "2.3.1"
 serde = { version = "1.0.152", features = ["derive"] }
 serde_json = "1.0.91"
+tokio = { version = "1", features = ["full"] }
+tracing = "0.1.37"
+tracing-subscriber = "0.3.16"
 warp = "0.3.3"
